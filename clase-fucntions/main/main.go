@@ -1,19 +1,17 @@
-package pain 
-
-func main (){
+package main 
 
 suma := "+"
 resta := "-"
 multipiclacion := "*"
 division := "/"
 
-
+func main (){
 result := fucntionAritmetica(5,5,suma)
 fmt.println(result)
 }
 
 
-func fucntionAritmetica(value1 value2 float64, operator string) float64 {
+func fucntionAritmetica(value1 float64 ,value2 float64, operator string) float64 {
 	switch(operator){
 	case suma :
 		 return	value1 + value2 	
@@ -26,5 +24,5 @@ func fucntionAritmetica(value1 value2 float64, operator string) float64 {
 			return value1 / value2
 		
 		 return 0
-	
+	}
 }
